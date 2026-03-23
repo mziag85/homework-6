@@ -168,23 +168,34 @@ a {
     height: 43px;
 }
 .green_box {
-   background-color: #40DDB6BF;
    max-width: 1920px;
    width: 100%;
    height: 557px;
-   margin: 0 auto;
-   margin-bottom: 130px; 
+   position: relative;
    display: flex;
    align-items: center;
    justify-content: center;
+   overflow: hidden;
    margin-bottom: 130px;
 }
+.background{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: url(../images/green_photo.svg);
+   filter: blur(4px);
+   display: flex;
+   background-size: cover;
+   z-index: 0;
+}
 .everything {
+    position: relative;
     text-align: center;
     justify-content: center;
     text-align: center;
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 .video {
     font-family: "Inter", sans-serif;
@@ -206,6 +217,7 @@ a {
     text-align: center;
     line-height: 146%;
     margin-bottom: 47px;
+
 }
 .video_start {
     display: flex;
